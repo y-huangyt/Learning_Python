@@ -25,13 +25,6 @@ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 
-`@pre_exercise_code`
-
-```{python}
-
-```
-
-
 `@sample_code`
 ```{python}
 print(__)
