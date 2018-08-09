@@ -103,8 +103,7 @@ print(__)
 print(member.shape)
 ```
 `@sct`
-
 ```{python}
-
+# Update this to something more informative.
+success_msg("Some praise! Then reinforce a learning objective from the exercise.")
 ```
-
