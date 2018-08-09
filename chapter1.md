@@ -14,8 +14,9 @@ key: 5cced56cca
 ```
 
 
-Dữ liệu về thông tin thành viên được lưu dưới dạng `.csv`.
+Dữ liệu về thông tin thành viên được lưu dưới dạng `.csv`
 Bài tập này giúp hiểu được các đọc file `.csv`
+a.
 
 
 `@instructions`
