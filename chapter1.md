@@ -1,6 +1,6 @@
 ---
-title: Test
-description: Test
+title: 'Load Data'
+description: 'Load Data'
 ---
 
 ## An exercise title written in sentence case
@@ -14,8 +14,7 @@ key: 5cced56cca
 ```
 
 
-This is the assignment text. It should help provide students with the background information needed.
-The instructions that follow should be in bullet point form with clear guidance for what is expected.
+Xử lý dữ liệu
 
 
 `@instructions`
@@ -35,7 +34,10 @@ The instructions that follow should be in bullet point form with clear guidance 
 ```
 `@sample_code`
 ```{python}
-# Your
+# Import pandas as pd
+import pandas as pd
+# Đọc file csv
+member = pd.read_csv(__,__)
 # sample
 # code
 # should
