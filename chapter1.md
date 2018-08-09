@@ -12,7 +12,7 @@ key: f2d800ab30
 ```
 
 
-Python là ngôn ngữ thông dịch, được blabla
+Python là ngôn ngữ thông dịch, được blabla!
 
 
 `@instructions`
@@ -30,10 +30,12 @@ cụm từ `"Hello World!"` phải là một chuỗi
 
 `@sample_code`
 ```{python}
+#Xuất ra dòng "Hello World!"
 print(__)
 ```
 `@solution`
 ```{python}
+#Xuất ra dòng "Hello World!"
 print("Hello World!")
 ```
 `@sct`
