@@ -47,7 +47,7 @@ print(member.__(10))
 # Import pandas as pd
 import pandas as pd
 # Đọc file csv
-member = pd.read_csv(__)
+member = pd.read_csv(member_file)
 # xuất ra 10 dòng đầu tiên
 print(member.head(10))
 ```
