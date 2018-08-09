@@ -18,7 +18,7 @@ Xử lý dữ liệu
 
 
 `@instructions`
-- Instruction 1
+- Tên file đã được lưu với biến `member_file`
 - Instruction 2
 - Instruction 3
 
@@ -31,6 +31,7 @@ Xử lý dữ liệu
 `@pre_exercise_code`
 ```{python}
 # Load datasets and packages here.
+member_file = 'https://assets.datacamp.com/production/repositories/3358/datasets/0dfd9cf73134137fc9e7abcbdce4a3d8af269ae9/member.csv'
 ```
 `@sample_code`
 ```{python}
