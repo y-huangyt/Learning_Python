@@ -39,7 +39,8 @@ member_file = 'https://assets.datacamp.com/production/repositories/3358/datasets
 import pandas as pd
 # Đọc file csv
 member = pd.read_csv(__)
-# sample
+# xuất ra 10 dòng đầu tiên
+print(member.__(10))
 # code
 # should
 # be
@@ -50,10 +51,12 @@ member = pd.read_csv(__)
 ```
 `@solution`
 ```{python}
-# Answer goes here
-# Make sure to match the comments with your sample code
-# to help students see the differences from solution
-# to given.
+# Import pandas as pd
+import pandas as pd
+# Đọc file csv
+member = pd.read_csv(__)
+# xuất ra 10 dòng đầu tiên
+print(member.head(10))
 ```
 `@sct`
 ```{python}
