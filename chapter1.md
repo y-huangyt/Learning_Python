@@ -21,6 +21,13 @@ Python là ngôn ngữ thông dịch, được blabla
 `@hint`
 cụm từ `"Hello World!"` phải là một chuỗi
 
+`@pre_exercise_code`
+
+```{python}
+
+```
+
+
 `@sample_code`
 ```{python}
 print(__)
@@ -30,6 +37,8 @@ print(__)
 print("Hello World!")
 ```
 `@sct`
+
 ```{python}
-Have you used print(7 + 10) to print out the sum of 7 and 10?
+
 ```
+
