@@ -19,9 +19,14 @@ Python là ngôn ngữ thông dịch, được blabla
 - Viết câu lệnh đầu tiên `"Hello  World!"` sử dụng hàm `print(_)`
 
 `@hint`
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+cụm từ `"Hello World!"` phải là một chuỗi
+
+`@pre_exercise_code`
+
+```{python}
+
+```
+
 
 `@sample_code`
 ```{python}
@@ -33,7 +38,5 @@ print('Hello World!')
 ```
 `@sct`
 ```{python}
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+cụm từ `"Hello World!"` phải là một chuỗi
 ```
