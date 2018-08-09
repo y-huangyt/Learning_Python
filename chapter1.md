@@ -3,7 +3,7 @@ title: 'Load Data'
 description: 'Load Data'
 ---
 
-## An exercise title written in sentence case
+## Đọc file 
 
 ```yaml
 type: NormalExercise 
@@ -41,13 +41,6 @@ import pandas as pd
 member = pd.read_csv(__)
 # xuất ra 10 dòng đầu tiên
 print(member.__(10))
-# code
-# should
-# be
-# ideally
-# 10 lines or less,
-# with a max
-# of 16 lines.
 ```
 `@solution`
 ```{python}
