@@ -25,27 +25,15 @@ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 
-`@pre_exercise_code`
-
-```{python}
-
-```
-
-
 `@sample_code`
-
 ```{python}
 print(__)
 ```
-
 `@solution`
-
 ```{python}
 print('1234')
 ```
-
 `@sct`
-
 ```{python}
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
