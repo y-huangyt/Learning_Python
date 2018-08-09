@@ -14,9 +14,8 @@ key: 5cced56cca
 ```
 
 
-Dữ liệu về thông tin thành viên được lưu dưới dạng `.csv`
+Dữ liệu về thông tin thành viên được lưu dưới dạng `.csv`.
 Bài tập này giúp hiểu được các đọc file `.csv`
-a.
 
 
 `@instructions`
@@ -62,3 +61,53 @@ print(member.columns)
 # Update this to something more informative.
 success_msg("Some praise! Then reinforce a learning objective from the exercise.")
 ```
+---
+
+## Cấu trúc file
+
+```yaml
+type: NormalExercise 
+xp: 100 
+key: 3e3f335310   
+```
+
+
+Ở bài trước, chúng ta đã xem tên các cột.
+Trong bài này chúng ta xem dữ liệu gồm bao nhiêu dòng và bao nhiêu cột.
+Thư viện `pandas` đã được load với tên `pd` và dữ liệu đã được load sẵn vào biến `member`
+
+
+`@instructions`
+
+
+`@hint`
+
+
+`@pre_exercise_code`
+
+```{python}
+import pandas as pd
+member_file = 'https://assets.datacamp.com/production/repositories/3358/datasets/0dfd9cf73134137fc9e7abcbdce4a3d8af269ae9/member.csv'
+member = pd.read_csv(member_file)
+```
+
+`@sample_code`
+
+```{python}
+
+```
+
+
+`@solution`
+
+```{python}
+
+```
+
+
+`@sct`
+
+```{python}
+
+```
+
