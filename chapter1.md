@@ -21,7 +21,7 @@ Bài tập này giúp hiểu được các đọc file `.csv`
 `@instructions`
 - Tên file đã được lưu với biến `member_file`. Đọc dữ liệu với `pd.read_csv`
 - In ra 10 dòng đầu tiên. Sử dụng hàm `head()'
-- Xem tên các cột. Sử dụng hàm `columns`
+- Xem tên các cột. Sử dụng thuộc tính `columns`
 
 `@hint`
 - Here is the hint for this setup problem. 
@@ -42,6 +42,8 @@ import pandas as pd
 member = pd.read_csv(__)
 # xuất ra 10 dòng đầu tiên
 print(member.__(10))
+# xuất ra tên các cột
+print(member.__)
 ```
 `@solution`
 ```{python}
@@ -51,6 +53,8 @@ import pandas as pd
 member = pd.read_csv(member_file)
 # xuất ra 10 dòng đầu tiên
 print(member.head(10))
+# xuất ra tên các cột
+print(member.columns)
 ```
 `@sct`
 ```{python}
