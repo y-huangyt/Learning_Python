@@ -19,7 +19,7 @@ Xử lý dữ liệu
 
 `@instructions`
 - Tên file đã được lưu với biến `member_file`. Đọc dữ liệu với `pd.read_csv`
-- Instruction 2
+- In ra 10 dòng đầu tiên. Sử dụng hàm `head()'
 - Instruction 3
 
 `@hint`
