@@ -20,7 +20,7 @@ Bài tập này giúp hiểu được các đọc file `.csv`
 
 `@instructions`
 - Tên file đã được lưu với biến `member_file`. Đọc dữ liệu với `pd.read_csv`
-- In ra 10 dòng đầu tiên. Sử dụng hàm `head()'
+- In ra 10 dòng đầu tiên. Sử dụng hàm `head()`
 - Xem tên các cột. Sử dụng thuộc tính `columns`
 
 `@hint`
