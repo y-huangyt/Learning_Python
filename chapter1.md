@@ -1,9 +1,9 @@
 ---
-title: 'Load Data'
-description: 'Load Data'
+title: 'Hello World'
+description: 'Python cơ bản'
 ---
 
-## AAAAAAAAAA
+## Hello Python
 
 ```yaml
 type: NormalExercise 
@@ -12,18 +12,23 @@ key: f2d800ab30
 ```
 
 
-
+Python là ngôn ngữ thông dịch, được blabla
 
 
 `@instructions`
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+- Viết câu lệnh đầu tiên `"Hello  World!"` sử dụng hàm `print(_)`
 
 `@hint`
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+`@pre_exercise_code`
+
+```{python}
+
+```
+
 
 `@sample_code`
 ```{python}
@@ -31,7 +36,7 @@ print(__)
 ```
 `@solution`
 ```{python}
-print('1234')
+print('Hello World!')
 ```
 `@sct`
 ```{python}
