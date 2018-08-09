@@ -80,6 +80,12 @@ Thư viện `pandas` đã được load với tên `pd` và dữ liệu đã đ�
 `@instructions`
 - Sử dụng thuộc tính `shape` để xem số dòng và số cột của dữ liệu
 
+`@hint`
+- Here is the hint for this setup problem. 
+- It should get students 50% of the way to the correct answer.
+- So don't provide the answer, but don't just reiterate the instructions.
+- Typically one hint per instruction is a sensible amount.
+
 `@pre_exercise_code`
 ```{python}
 import pandas as pd
@@ -96,3 +102,9 @@ print(__)
 #Xuất ra  số dòng và số cột của dữ liệu
 print(member.shape)
 ```
+`@sct`
+
+```{python}
+
+```
+
