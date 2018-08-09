@@ -3,7 +3,7 @@ title: 'Load Data'
 description: 'Load Data'
 ---
 
-## Đọc file 
+## Đọc file
 
 ```yaml
 type: NormalExercise 
