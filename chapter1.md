@@ -18,7 +18,7 @@ Xử lý dữ liệu
 
 
 `@instructions`
-- Tên file đã được lưu với biến `member_file`
+- Tên file đã được lưu với biến `member_file`. Đọc dữ liệu với 'pd.read_csv'
 - Instruction 2
 - Instruction 3
 
@@ -38,7 +38,7 @@ member_file = 'https://assets.datacamp.com/production/repositories/3358/datasets
 # Import pandas as pd
 import pandas as pd
 # Đọc file csv
-member = pd.read_csv(__,__)
+member = pd.read_csv(__)
 # sample
 # code
 # should
