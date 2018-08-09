@@ -40,5 +40,5 @@ print("Hello World!")
 ```
 `@sct`
 ```{python}
-Hello
+success_msg("Vui lòng nhập đúng Chuỗi")
 ```
