@@ -34,7 +34,7 @@ print(__)
 ```
 `@solution`
 ```{python}
-print('Hello World!')
+print("Hello World!")
 ```
 `@sct`
 ```{python}
