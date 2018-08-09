@@ -14,13 +14,14 @@ key: 5cced56cca
 ```
 
 
-Xử lý dữ liệu
+Dữ liệu về thông tin thành viên được lưu dưới dạng `.csv`.
+Bài tập này giúp hiểu được các đọc file `.csv`
 
 
 `@instructions`
 - Tên file đã được lưu với biến `member_file`. Đọc dữ liệu với `pd.read_csv`
 - In ra 10 dòng đầu tiên. Sử dụng hàm `head()'
-- Instruction 3
+- Xem tên các cột. Sử dụng hàm `columns`
 
 `@hint`
 - Here is the hint for this setup problem. 
