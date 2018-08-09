@@ -80,34 +80,19 @@ Thư viện `pandas` đã được load với tên `pd` và dữ liệu đã đ�
 `@instructions`
 - Sử dụng thuộc tính `shape` để xem số dòng và số cột của dữ liệu
 
-`@hint`
-
-
 `@pre_exercise_code`
-
 ```{python}
 import pandas as pd
 member_file = 'https://assets.datacamp.com/production/repositories/3358/datasets/0dfd9cf73134137fc9e7abcbdce4a3d8af269ae9/member.csv'
 member = pd.read_csv(member_file)
 ```
-
 `@sample_code`
-
 ```{python}
 #Xuất ra số dòng và số cột của dữ liệu
 print(__)
 ```
-
 `@solution`
-
 ```{python}
 #Xuất ra  số dòng và số cột của dữ liệu
 print(member.shape)
 ```
-
-`@sct`
-
-```{python}
-
-```
-
