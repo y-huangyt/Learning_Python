@@ -78,7 +78,7 @@ Thư viện `pandas` đã được load với tên `pd` và dữ liệu đã đ�
 
 
 `@instructions`
-
+- Sử dụng thuộc tính `shape` để xem số dòng và số cột của dữ liệu
 
 `@hint`
 
@@ -94,16 +94,16 @@ member = pd.read_csv(member_file)
 `@sample_code`
 
 ```{python}
-
+#Xuất ra số dòng và số cột của dữ liệu
+print(__)
 ```
-
 
 `@solution`
 
 ```{python}
-
+#Xuất ra  số dòng và số cột của dữ liệu
+print(member.shape)
 ```
-
 
 `@sct`
 
