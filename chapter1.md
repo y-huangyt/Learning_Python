@@ -64,7 +64,7 @@ success_msg("Tuyệt! Đến bài tiếp theo nào")
 
 ---
 
-## When to use Python?
+## Bạn sử dụng Python khi nào?
 
 ```yaml
 type: MultipleChoiceExercise 
@@ -75,25 +75,32 @@ key: 9703b117fb
 ```
 
 
-Python is a pretty versatile language. For which applications can you use Python?
+Python là một ngôn ngữ đa năng. Bạn có thể dùng python khi?
 
 
 `@instructions`
-- You want to do some quick calculations.
-- For your new business, you want to develop a database-driven website.
-- Your boss asks you to clean and analyze the results of the latest satisfaction survey.
+- Thực hiện một số tính toán một cách nhanh chóng .
+- Xây dựng một database-driven website.
+- Làm sạch dữ liệu và phân tích các bảng khảo sát.
 - All of the above.
 
 `@hint`
-Filip mentioned in the video that Python can be used to build practically any piece of software.
+Bạn có thể tra google...
+
+`@pre_exercise_code`
+
+```{python}
+
+```
+
 
 `@sct`
 
 ```{python}
-msg1 = "Incorrect. Python can do simple and quick calculations, but it is much more than that!"
-msg2 = "Incorrect. There is a very popular framework to build database-driven websites (Django), but Python can do much more."
-msg3 = "Incorrect. Python is a powerful tool to do data analysis, but you can also use it for other ends."
-msg4 = "Correct! Python is an extremely versatile language."
+msg1 = "Chưa chính xác. Python có thể làm được nhiều hơn thế!"
+msg2 = "Chưa chính xác. Framework phổ biến để xây dựng database-driven websites là Django, Nhưng Python còn có thể làm nhiều hơn vậy."
+msg3 = "Chưa chính xác. Python là một công cụ rất mạnh cho việc xử lý và phân tích dữ liệu. Ngoài ra nó còn làm được các việc khác"
+msg4 = "Chính xác! Python là một ngôn ngữ rất đa năng."
 Ex().has_chosen(4, [msg1, msg2, msg3, msg4])
 ```
 
