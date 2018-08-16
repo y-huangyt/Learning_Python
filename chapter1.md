@@ -14,45 +14,52 @@ key: bdc52f0e19
 ```
 
 
-In the Python script on the right, you can type Python code to solve the exercises. If you hit _Run Code_ or _Submit Answer_, your python script (`script.py`) is executed and the output is shown in the IPython Shell. _Submit Answer_ checks whether your submission is correct and gives you feedback.
+Trong khung script python bên phải, bạn có thể gõ code Python để làm bài tập. Khi bạn nhấn _Run Code_hoặc _Submit Answer, script python (`script.py`) sẽ được thực thi và kết quả sẽ được hiện thị ở khung IPython Shell(Khung phía dưới). _Submit Answer_ kiểm tra bài làm của bạn có đúng không và thông báo kết quả.
 
-You can hit _Run Code_ and _Submit Answer_ as often as you want. If you're stuck, you can click _Get Hint_, and ultimately _Get Solution_.
+ Nếu cảm thấy yêu cầu của bài hơi khó, bạn có thể click vào _Get Hint_ hoặc  _Get Solution_ . Dĩ nhiên bạn sẽ bị mất đi 1 phần Xp khi click vào các nút này.
 
-You can also use the IPython Shell interactively by simply typing commands and hitting Enter. When you work in the shell directly, your code will not be checked for correctness so it is a great way to experiment.
+Bạn có thể sử dụng  IPython Shell  để gõ các câu lệnh python sau đó nhấn Enter.  Sử dụng nó để kiểm tra lỗi cú pháp hoặc kết quả.
 
 
 `@instructions`
-- Experiment in the IPython Shell; type `5 / 8`, for example.
-- Add another line of code to the Python script: `print(7 + 10)`.
-- Hit _Submit Answer_ to execute the Python script and receive feedback.
+- Trong khung  IPython Shell; gõ `5 / 8`.
+- Trong khung Python script, gõ : `print(7 + 10)`.
+-  Nhấn _Submit_Answer.
 
 `@hint`
-Simply add `print(7 + 10)` in the script on the right and hit 'Submit Answer'.
+Bạn đã gõ `print(7 + 10)`  vào khung Python Script chưa?
+
+`@pre_exercise_code`
+
+```{python}
+
+```
+
 
 `@sample_code`
 
 ```{python}
-# Example, do not modify!
+# Ví dụ
 print(5 / 8)
 
-# Put code below here
+# Gõ code vào đây
 ```
 
 `@solution`
 
 ```{python}
-# Example, do not modify!
+# Ví dụ
 print(5 / 8)
 
-# Put code below here
+# Gõ code vào đây
 print(7 + 10)
 ```
 
 `@sct`
 
 ```{python}
-Ex().has_printout(1, not_printed_msg = "__JINJA__:Have you used `{{sol_call}}` to print out the sum of 7 and 10?")
-success_msg("Great! On to the next one!")
+Ex().has_printout(1, not_printed_msg = "__JINJA__: Bạn đã sử dụng `{{sol_call}}` để in tổng của 7 và 10 chưa?")
+success_msg("Tuyệt! Đến bài tiếp theo nào")
 ```
 
 ---
@@ -208,22 +215,6 @@ Ex().has_printout(6, not_printed_msg = "Have you used `print(100 * 1.1 ** 7)` to
 success_msg("Time for another video!")
 ```
 
----
-
-## Variables & Types
-
-```yaml
-type: VideoExercise 
-lang: python
-xp: 50 
-skills: 2
-key: ef8356fb92 
-video_link: //player.vimeo.com/video/154561704 
-video_hls: //videos.datacamp.com/transcoded/735_intro_to_python/v1/hls-ch1_2.master.m3u8 
-```
-
-`@projector_key`
-7df0925250c5fb2a647cd76fb09d446e
 ---
 
 ## Variable Assignment
