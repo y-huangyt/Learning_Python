@@ -106,7 +106,7 @@ Ex().has_chosen(4, [msg1, msg2, msg3, msg4])
 
 ---
 
-## Any comments?
+## Thêm chú thích vào Python script
 
 ```yaml
 type: NormalExercise 
@@ -117,7 +117,7 @@ key: 7c4a738a13
 ```
 
 
-Bạn có thể thêm vào dòng chú thích (**comments**) trong file Python scripts. Dòng chú thích giúp người khác đọc lại code của bạn dễ dàng hơn, và cũng để bạn nhớ ra bạn code cái quái gì vào tuần trước
+Bạn có thể thêm vào dòng chú thích (**comments**) trong file Python scripts. Dòng chú thích giúp người khác đọc lại code của bạn dễ dàng hơn, và cũng để bạn nhớ ra bạn code cái quái gì vào tuần trước.
 
 Để thêm **comments** vào  Python script ,sử dụng `#` tag. Những **comment** này sẽ không được tính là một dòng  code Python, và nó sẽ không ảnh hưởng tới kết quả tính toán.   Trong vị dụ bên phải, mình đã thêm comment : `# Division`
 
