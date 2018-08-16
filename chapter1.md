@@ -3,7 +3,7 @@
   description: "Python cơ bản"
 ---
 
-## The Python Interface
+## Giao diện Python trên Data Camp
 
 ```yaml
 type: NormalExercise 
@@ -14,9 +14,9 @@ key: bdc52f0e19
 ```
 
 
-Trong khung script python bên phải, bạn có thể gõ code Python để làm bài tập. Khi bạn nhấn _Run Code_hoặc _Submit Answer, script python (`script.py`) sẽ được thực thi và kết quả sẽ được hiện thị ở khung IPython Shell(Khung phía dưới). _Submit Answer_ kiểm tra bài làm của bạn có đúng không và thông báo kết quả.
+Trong khung script python bên phải, bạn có thể gõ code Python để làm bài tập. Khi bạn nhấn _Run Code_ hoặc _Submit Answer_, script python (`script.py`) sẽ được thực thi và kết quả sẽ được hiện thị ở khung IPython Shell(Khung phía dưới). _Submit Answer_ kiểm tra bài làm của bạn có đúng không và thông báo kết quả.
 
- Nếu cảm thấy yêu cầu của bài hơi khó, bạn có thể click vào _Get Hint_ hoặc  _Get Solution_ . Dĩ nhiên bạn sẽ bị mất đi 1 phần Xp khi click vào các nút này.
+ Nếu cảm thấy yêu cầu của bài hơi khó, bạn có thể click vào _Take Hint_ hoặc  _Take Solution_ . Dĩ nhiên bạn sẽ bị mất đi 1 phần Xp khi click vào các nút này.
 
 Bạn có thể sử dụng  IPython Shell  để gõ các câu lệnh python sau đó nhấn Enter.  Sử dụng nó để kiểm tra lỗi cú pháp hoặc kết quả.
 
@@ -24,7 +24,7 @@ Bạn có thể sử dụng  IPython Shell  để gõ các câu lệnh python sa
 `@instructions`
 - Trong khung  IPython Shell; gõ `5 / 8`.
 - Trong khung Python script, gõ : `print(7 + 10)`.
--  Nhấn _Submit_Answer.
+-  Nhấn _Submit Answer_.
 
 `@hint`
 Bạn đã gõ `print(7 + 10)`  vào khung Python Script chưa?
