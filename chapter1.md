@@ -117,21 +117,28 @@ key: 7c4a738a13
 ```
 
 
-Something that Filip didn't mention in his videos is that you can add **comments** to your Python scripts. Comments are important to make sure that you and others can understand what your code is about.
+Bạn có thể thêm vào dòng chú thích (**comments**) trong file Python scripts. Dòng chú thích giúp người khác đọc lại code của bạn dễ dàng hơn, và cũng để bạn nhớ ra bạn code cái quái gì vào tuần trước
 
-To add comments to your Python script, you can use the `#` tag. These comments are not run as Python code, so they will not influence your result. As an example, take the comment on the right, `# Division`; it is completely ignored during execution.
+Để thêm **comments** vào  Python script, Bạn sẽ sử dụng `#` tag. Những **comment** này sẽ không được tính là một dòng  code Python, và nó sẽ không ảnh hưởng tới kết quả tính toán.   Trong vị dụ bên phải, mình đã thêm comment : `# Division`
 
 
 `@instructions`
-Above the `print(7 + 10)`, add the comment `# Addition`.
+Thêm chú thích ` Phép cộng ` phía trên dòng `print(7 + 10)`.
 
 `@hint`
-For this exercise you only have to add one line of comments. It won't run as Python code. Add `# Addition` right above `print(7 + 10)`.
+Bạn đã thêm chú thích đúng chỗ chưa
+
+`@pre_exercise_code`
+
+```{python}
+
+```
+
 
 `@sample_code`
 
 ```{python}
-# Division
+# Phép chia
 print(5 / 8)
 
 
@@ -141,18 +148,18 @@ print(7 + 10)
 `@solution`
 
 ```{python}
-# Division
+# Phép chia
 print(5 / 8)
 
-# Addition
+# Phép cộng
 print(7 + 10)
 ```
 
 `@sct`
 
 ```{python}
-Ex().has_code("#\s*(\w+)[\s.!?]*print\s*\(\s*7", not_typed_msg = "Make sure to add the comment right before `print(7 + 10)`.")
-success_msg("Great!")
+Ex().has_code("#\s*(\w+)[\s.!?]*print\s*\(\s*7", not_typed_msg = "Hãy chắc chắn rằng bạn đã thêm phần comment phía trên phần `print(7 + 10)`.")
+success_msg("Tuyệt!")
 ```
 
 ---
