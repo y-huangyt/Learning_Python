@@ -82,7 +82,7 @@ Python là một ngôn ngữ đa năng. Bạn có thể dùng python khi?
 - Thực hiện một số tính toán một cách nhanh chóng .
 - Xây dựng một database-driven website.
 - Làm sạch dữ liệu và phân tích các bảng khảo sát.
-- All of the above.
+- Tất cả các phương án trên.
 
 `@hint`
 Bạn có thể tra google...
