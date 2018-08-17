@@ -29,13 +29,6 @@ Bạn có thể sử dụng  IPython Shell  để gõ các câu lệnh python sa
 `@hint`
 Bạn đã gõ `print(7 + 10)`  vào khung Python Script chưa?
 
-`@pre_exercise_code`
-
-```{python}
-
-```
-
-
 `@sample_code`
 
 ```{python}
@@ -87,13 +80,6 @@ Python là một ngôn ngữ đa năng. Bạn có thể dùng python khi?
 `@hint`
 Bạn có thể tra google...
 
-`@pre_exercise_code`
-
-```{python}
-
-```
-
-
 `@sct`
 
 ```{python}
@@ -128,13 +114,6 @@ Thêm chú thích ` # Addition ` phía trên dòng `print(7 + 10)`.
 `@hint`
 Bạn đã thêm chú thích đúng chỗ chưa
 
-`@pre_exercise_code`
-
-```{python}
-
-```
-
-
 `@sample_code`
 
 ```{python}
@@ -164,7 +143,7 @@ success_msg("Tuyệt!")
 
 ---
 
-## Python as a calculator
+## Tính toán đơn giản bằng Python
 
 ```yaml
 type: NormalExercise 
@@ -176,18 +155,26 @@ key: 0f7c039428
 
 
 Python is perfectly suited to do basic calculations. Apart from addition, subtraction, multiplication and division, there is also support for more advanced operations such as:
+Python phù hợp cho các tính toán cơ bản bao gồm cộng trừ nhân chia, ngoài ra nó còn hỗ trợ các phép tính khác
+- Phép lũy thừa: `**`.  Ví dụ `4**2` sẽ cho kết quả là `16`.
+- Modulo: `%`. Cho kết quả là modulo. Ví dụ  `18 % 7` có kết quả là  `4`.
 
-- Exponentiation: `**`. This operator raises the number to its left to the power of the number to its right. For example `4**2` will give `16`.
-- Modulo: `%`. This operator returns the remainder of the division of the number to the left by the number on its right. For example `18 % 7` equals `4`.
-
-The code in the script on the right gives some examples.
+Dưới đây là một ví dụ.
 
 
 `@instructions`
-Suppose you have $100, which you can invest with a 10% return each year. After one year, it's $100 \times 1.1 = 110$ dollars, and after two years it's $100 \times 1.1 \times 1.1 = 121$. Add code on the right to calculate how much money you end up with after 7 years.
+Giả sử bạn có $100, Bạn có thể gửi ngân hàng với lãi suất  là 10% Mỗi năm. Năm đầu tiên bạn sẽ có  $100 \times 1.1 = 110$ , sau năm thứ hai nó sẽ là  $100 \times 1.1 \times 1.1 = 121$. 
+Hãy viết đoạn code tính tổng tiền bạn có sau 7 năm
 
 `@hint`
-After two years you have $100 \times 1.1 \times 1.1 = 100 \times 1.1^2$. How much do you have after 7 years than? Use `*` and `**`.
+Sau năm thứ 2 bạn có $100 \times 1.1 \times 1.1 = 100 \times 1.1^2$. Sau 7 năm bạn sẽ có bao nhiêu? Sử dụng  `*` và`**`.
+
+`@pre_exercise_code`
+
+```{python}
+
+```
+
 
 `@sample_code`
 
