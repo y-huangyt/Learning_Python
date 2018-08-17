@@ -234,16 +234,15 @@ Ví dụ
 x = 5
 ```
 
-Nhớ răng, `=` trong Python có nghĩa là   _phép gán_,  Không phải so sánh bằng~~
+Nhớ rằng, `=` trong Python có nghĩa là   _phép gán_,  Không phải so sánh bằng~~
 
 
 `@instructions`
-- Create a variable `savings` with the value 100.
-- Check out this variable by typing `print(savings)` in the script.
+- Tạo biến `savings` Với giá trị 100.
+- Xuất ra giá trị của biến với cú pháp  `print(savings)` .
 
 `@hint`
-- Type `savings = 100` to create the variable `savings`.
-- After creating the variable `savings`, you can type `print(savings)`.
+- Cái này dễ mà, thử lại nào!!
 
 `@pre_exercise_code`
 
@@ -255,28 +254,27 @@ Nhớ răng, `=` trong Python có nghĩa là   _phép gán_,  Không phải so s
 `@sample_code`
 
 ```{python}
-# Create a variable savings
+# Tạo biến savings
 
 
-# Print out savings
+# In ra giá trị savings
 ```
 
 `@solution`
 
 ```{python}
-# Create a variable savings
+# Tạo biến savings
 savings = 100
 
-# Print out savings
-print(savings)
+# In ra giá trị savingsprint(savings)
 ```
 
 `@sct`
 
 ```{python}
-Ex().check_object("savings").has_equal_value(incorrect_msg="Assign `100` to the variable `savings`.")
-Ex().has_printout(0, not_printed_msg = "Print out `savings`, the variable you created, with `print(savings)`.")
-success_msg("Great! Let's try to do some calculations with this variable now!")
+Ex().check_object("savings").has_equal_value(incorrect_msg="Gán `100` Cho biến `savings`.")
+Ex().has_printout(0, not_printed_msg = "In ra giá trị `savings`, sử dụng `print(savings)`.")
+success_msg("Tuyệt!")
 ```
 
 ---
