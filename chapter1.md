@@ -168,13 +168,6 @@ Hãy viết đoạn code tính tổng tiền bạn có sau 7 năm.
 `@hint`
 Sau năm thứ 2 bạn có $100 \times 1.1 \times 1.1 = 100 \times 1.1^2$. Sau 7 năm bạn sẽ có bao nhiêu? Sử dụng  `*` và`**`.
 
-`@pre_exercise_code`
-
-```{python}
-
-```
-
-
 `@sample_code`
 
 ```{python}
@@ -244,13 +237,6 @@ Nhớ rằng, `=` trong Python có nghĩa là   _phép gán_,  Không phải so 
 `@hint`
 - Cái này dễ mà, thử lại nào!!
 
-`@pre_exercise_code`
-
-```{python}
-
-```
-
-
 `@sample_code`
 
 ```{python}
@@ -315,31 +301,31 @@ Hãy nhớ lại bài trước đó, dưới đây là kết quả số tiền b
 `@sample_code`
 
 ```{python}
-# Create a variable savings
+# Khai báo biến savings
 savings = 100
 
-# Create a variable factor
+# Khai báo biến factor
 
 
-# Calculate result
+# Tính kết quả và lưu vào biến: result
 
 
-# Print out result
+# In kết quả 
 ```
 
 `@solution`
 
 ```{python}
-# Create a variable savings
+# Khai báo biến savings
 savings = 100
 
-# Create a variable factor
+# Khai báo biến factor
 factor = 1.1
 
-# Calculate result
+# Tính kết quả và lưu vào biến: result
 result = savings * factor ** 7
 
-# Print out result
+# In kết quả 
 print(result)
 ```
 
@@ -347,13 +333,13 @@ print(result)
 
 ```{python}
 Ex().check_correct(
-  check_object("result").has_equal_value(incorrect_msg="Have you used `*` and `**` to calculate `result`?"),
+  check_object("result").has_equal_value(incorrect_msg="Bạn đã sử dụng `*` and `**` để tính kết quả và lưu vào `result` chưa?"),
   multi(
-    check_object("savings", missing_msg="The variable `savings` was defined for you, don't remove it!").has_equal_value(incorrect_msg="The variable `savings` should be `100`, like it was defined for you."),
-    check_object("factor").has_equal_value(incorrect_msg="The value of `factor` should be `1.1`.")
+    check_object("savings", missing_msg=" Vui lòng đừng xóa biến `savings`!").has_equal_value(incorrect_msg="Biến `savings` nên để giá trị `100`, Vui lòng đừng thay đổi."),
+    check_object("factor").has_equal_value(incorrect_msg="Biến `factor` nên có giá trị `1.1`.")
   )
 )
-Ex().has_printout(0, not_printed_msg="Don't forget to print out `result` at the end of your script.")
+Ex().has_printout(0, not_printed_msg="Đừng quên in giá trị của `result`.")
 success_msg("Great!")
 ```
 
