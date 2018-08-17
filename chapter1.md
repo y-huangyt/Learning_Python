@@ -163,7 +163,7 @@ Dưới đây là một ví dụ.
 
 `@instructions`
 Giả sử bạn có $100, Bạn có thể gửi ngân hàng với lãi suất  là 10% Mỗi năm. Năm đầu tiên bạn sẽ có  $100 \times 1.1 = 110$ , sau năm thứ hai nó sẽ là  $100 \times 1.1 \times 1.1 = 121$. 
-Hãy viết đoạn code tính tổng tiền bạn có sau 7 năm
+Hãy viết đoạn code tính tổng tiền bạn có sau 7 năm.
 
 `@hint`
 Sau năm thứ 2 bạn có $100 \times 1.1 \times 1.1 = 100 \times 1.1^2$. Sau 7 năm bạn sẽ có bao nhiêu? Sử dụng  `*` và`**`.
@@ -217,7 +217,7 @@ success_msg("Tuyệt!")
 
 ---
 
-## Variable Assignment
+## Gán giá trị
 
 ```yaml
 type: NormalExercise 
@@ -228,15 +228,13 @@ key: 4bf65ad83e
 ```
 
 
-In Python, a variable allows you to refer to a value with a name. To create a variable use `=`, like this example:
-
+Để khai báo biến và gán giá trị cho python sử dụng ``` Tên biến = Tên giá trị``
+Ví dụ
 ```
 x = 5
 ```
 
-You can now use the name of this variable, `x`, instead of the actual value, `5`.
-
-Remember, `=` in Python means _assignment_, it doesn't test equality!
+Nhớ răng, `=` trong Python có nghĩa là   _phép gán_,  Không phải so sánh bằng~~
 
 
 `@instructions`
@@ -246,6 +244,13 @@ Remember, `=` in Python means _assignment_, it doesn't test equality!
 `@hint`
 - Type `savings = 100` to create the variable `savings`.
 - After creating the variable `savings`, you can type `print(savings)`.
+
+`@pre_exercise_code`
+
+```{python}
+
+```
+
 
 `@sample_code`
 
