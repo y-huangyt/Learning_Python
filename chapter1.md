@@ -221,7 +221,7 @@ key: 4bf65ad83e
 ```
 
 
-Để khai báo biến và gán giá trị cho python sử dụng ``` Tên biến = Tên giá trị``
+Để khai báo biến và gán giá trị cho python sử dụng ``` Tên biến = giá trị``
 Ví dụ
 ```
 x = 5
@@ -236,6 +236,13 @@ Nhớ rằng, `=` trong Python có nghĩa là   _phép gán_,  Không phải so 
 
 `@hint`
 - Cái này dễ mà, thử lại nào!!
+
+`@pre_exercise_code`
+
+```{python}
+
+```
+
 
 `@sample_code`
 
@@ -291,13 +298,6 @@ Hãy nhớ lại bài trước đó, dưới đây là kết quả số tiền b
 - Tạo biến `factor`, dùng lệnh `factor = 1.10`.
 - Thay  `100` bằng `savings` và `1.10` bằng  `factor`: `savings * factor ** 7`.
 
-`@pre_exercise_code`
-
-```{python}
-
-```
-
-
 `@sample_code`
 
 ```{python}
@@ -310,7 +310,7 @@ savings = 100
 # Tính kết quả và lưu vào biến: result
 
 
-# In kết quả 
+# In kết quả
 ```
 
 `@solution`
