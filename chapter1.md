@@ -340,7 +340,7 @@ Ex().check_correct(
   )
 )
 Ex().has_printout(0, not_printed_msg="Đừng quên in giá trị của `result`.")
-success_msg("Great!")
+success_msg("Tuyệt!")
 ```
 
 ---
