@@ -154,7 +154,6 @@ key: 0f7c039428
 ```
 
 
-Python is perfectly suited to do basic calculations. Apart from addition, subtraction, multiplication and division, there is also support for more advanced operations such as:
 Python phù hợp cho các tính toán cơ bản bao gồm cộng trừ nhân chia, ngoài ra nó còn hỗ trợ các phép tính khác
 - Phép lũy thừa: `**`.  Ví dụ `4**2` sẽ cho kết quả là `16`.
 - Modulo: `%`. Cho kết quả là modulo. Ví dụ  `18 % 7` có kết quả là  `4`.
@@ -179,41 +178,41 @@ Sau năm thứ 2 bạn có $100 \times 1.1 \times 1.1 = 100 \times 1.1^2$. Sau 7
 `@sample_code`
 
 ```{python}
-# Addition, subtraction
+# Cộng, trừ
 print(5 + 5)
 print(5 - 5)
 
-# Multiplication, division, modulo, and exponentiation
+# Nhân, Chia, Modulo, Lũy thừa
 print(3 * 5)
 print(10 / 2)
 print(18 % 7)
 print(4 ** 2)
 
-# How much is your $100 worth after 7 years?
+# Số tiền bạn có được sau 7 năm?
 ```
 
 `@solution`
 
 ```{python}
-# Addition, subtraction
+# Cộng, trừ
 print(5 + 5)
 print(5 - 5)
 
-# Multiplication, division, modulo, and exponentiation
+# Nhân, Chia, Modulo, Lũy thừa
 print(3 * 5)
 print(10 / 2)
 print(18 % 7)
 print(4 ** 2)
 
-# How much is your $100 worth after 7 years?
+# Số tiền bạn có được sau 7 năm?
 print(100 * 1.1 ** 7)
 ```
 
 `@sct`
 
 ```{python}
-Ex().has_printout(6, not_printed_msg = "Have you used `print(100 * 1.1 ** 7)` to print out the result of your calculations?")
-success_msg("Time for another video!")
+Ex().has_printout(6, not_printed_msg = "Bạn đã thử `print(100 * 1.1 ** 7)` chưa?")
+success_msg("Tuyệt!")
 ```
 
 ---
