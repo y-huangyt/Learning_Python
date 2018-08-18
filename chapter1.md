@@ -674,15 +674,33 @@ key: 3e5f0bdf3a
 ```
 
 
-Now that you know something more about combining different sources of information, have a look at the four Python expressions below.
-Which one of these will throw an error? You can always copy and paste this code in the IPython Shell to find out!
+Câu hỏi trắc nghiệm cuối chương. Đáp án nào là chính xác
+
+Bạn có thể copy các dòng lệnh và chạy nó trong khung _IPython Shell_ để kiểm tra kết quả
 
 
 `@instructions`
-- `"I can add integers, like "  + str(5) + " to strings."`
-- `"I said " + ("Hey " * 2) + "Hey!"`
-- `"The correct answer to this multiple choice exercise is answer number " + 2`
+- `"Có thể ép kiểu của số "  + str(5) + " sang string."`
+- `"Có một con muỗi kêu " + ("vove " * 3) + "love"+ ("vove " * 5)`
+- `"Câu trả lời đúng là câu số " + 2`
 - `True + False`
 
 `@hint`
-Copy and paste the different expressions into the IPython Shell and try to figure out which one throws an error.
+Bạn có thể copy các dòng lệnh và chạy nó trong khung _IPython Shell_ để kiểm tra kết quả
+
+`@pre_exercise_code`
+
+```{python}
+
+```
+
+
+`@sct`
+
+```{python}
+msg1 = "Chưa chính xác, Câu lệnh này hoàn toàn hợp lệ."
+msg2 = "Chưa chính xác, Câu lệnh này hoàn toàn hợp lệ."
+msg3 = "Chính xác! bởi vì bạn chưa ép kiểu số `2` sang string sử dụng [`str()`](https://docs.python.org/3/library/functions.html#func-str), this will give an error."
+msg4 = "`True + False` Không sai. Bởi vì đơn giản nó chỉ là một chuỗi "
+Ex().has_chosen(3, [msg1, msg2, msg3, msg4])
+```
