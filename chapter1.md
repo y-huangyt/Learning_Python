@@ -29,13 +29,6 @@ Bạn có thể sử dụng  IPython Shell  để gõ các câu lệnh python sa
 `@hint`
 Bạn đã gõ `print(7 + 10)`  vào khung Python Script chưa?
 
-`@pre_exercise_code`
-
-```{python}
-
-```
-
-
 `@sample_code`
 
 ```{python}
@@ -119,13 +112,6 @@ Thêm chú thích ` # Addition ` phía trên dòng `print(7 + 10)`.
 `@hint`
 Bạn đã thêm chú thích đúng chỗ chưa
 
-`@pre_exercise_code`
-
-```{python}
-
-```
-
-
 `@sample_code`
 
 ```{python}
@@ -177,13 +163,6 @@ Hãy viết đoạn code tính tổng tiền bạn có sau 7 năm.
 
 `@hint`
 Sau năm thứ 2 bạn có $100 \times 1.1 \times 1.1 = 100 \times 1.1^2$. Sau 7 năm bạn sẽ có bao nhiêu? Sử dụng  `*` và`**`.
-
-`@pre_exercise_code`
-
-```{python}
-
-```
-
 
 `@sample_code`
 
@@ -250,13 +229,6 @@ Nhớ rằng, `=` trong Python có nghĩa là   _phép gán_,  Không phải so 
 `@hint`
 - Cái này dễ mà, thử lại nào!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-`@pre_exercise_code`
-
-```{python}
-
-```
-
-
 `@sample_code`
 
 ```{python}
@@ -309,13 +281,6 @@ Hãy nhớ lại bài trước đó, dưới đây là kết quả số tiền b
 `@hint`
 - Tạo biến `factor`, dùng lệnh `factor = 1.10`.
 - Thay  `100` bằng `savings` và `1.10` bằng  `factor`: `savings * factor ** 7`.
-
-`@pre_exercise_code`
-
-```{python}
-
-```
-
 
 `@sample_code`
 
@@ -381,7 +346,7 @@ Ngoài kiểu số còn có 2 kiểu dữ liệu rất phổ biến:
 
 `@instructions`
 - Khai báo biến kiểu string , `msg` với giá trị `"Hello World!"`.
-- Khai báo biến kiể boolean, `newbie`, với giá trị `True`.
+- Khai báo biến kiểu boolean, `newbie`, với giá trị `True`.
 
 `@hint`
 - Hãy chắc rằng chuỗi bạn truyền vào nằm trong `'` hoặc `"`.
@@ -399,7 +364,7 @@ Ngoài kiểu số còn có 2 kiểu dữ liệu rất phổ biến:
 ```{python}
 # Khai báo biến msg
 
-# Khai báo biến
+# Khai báo biến newbie
 ```
 
 `@solution`
@@ -407,7 +372,7 @@ Ngoài kiểu số còn có 2 kiểu dữ liệu rất phổ biến:
 ```{python}
 # Khai báo biến msg
 msg = "Hello World!"
-# Khai báo biến
+# Khai báo biến newbie
 newbie = True
 ```
 
@@ -496,13 +461,6 @@ Tương tự với thao tác nhân.
 - Để in ra kiểu của biến  `x`, sử dụng `print(type(x))`.
 -  `triple_msg = msg * 3`.
 - Để in ra giá trị của biến `x`, sử dụng `print(x)`.
-
-`@pre_exercise_code`
-
-```{python}
-
-```
-
 
 `@sample_code`
 
@@ -594,13 +552,6 @@ Tương tự ta cũng có các hàm [`int()`](https://docs.python.org/3/library/
 - Bạn nên sử dụng [`str()`](https://docs.python.org/3/library/functions.html#func-str)!
 - Bạn nên sử dụng [`float()`](https://docs.python.org/3/library/functions.html#float) để ép kiểu cho  `pi_string` và lưu nó vào `pi_float`.
 
-`@pre_exercise_code`
-
-```{python}
-
-```
-
-
 `@sample_code`
 
 ```{python}
@@ -688,13 +639,6 @@ Bạn có thể copy các dòng lệnh và chạy nó trong khung _IPython Shell
 
 `@hint`
 Bạn có thể copy các dòng lệnh và chạy nó trong khung _IPython Shell_ để kiểm tra kết quả
-
-`@pre_exercise_code`
-
-```{python}
-
-```
-
 
 `@sct`
 
