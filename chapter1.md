@@ -248,7 +248,7 @@ Nhớ rằng, `=` trong Python có nghĩa là   _phép gán_,  Không phải so 
 - Xuất ra giá trị của biến với cú pháp  `print(savings)` .
 
 `@hint`
-- Cái này dễ mà, thử lại nào!!
+- Cái này dễ mà, thử lại nào!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 `@pre_exercise_code`
 
@@ -701,6 +701,6 @@ Bạn có thể copy các dòng lệnh và chạy nó trong khung _IPython Shell
 msg1 = "Chưa chính xác, Câu lệnh này hoàn toàn hợp lệ."
 msg2 = "Chưa chính xác, Câu lệnh này hoàn toàn hợp lệ."
 msg3 = "Chính xác! bởi vì bạn chưa ép kiểu số `2` sang string sử dụng [`str()`](https://docs.python.org/3/library/functions.html#func-str), this will give an error."
-msg4 = "`True + False` Không sai. Bởi vì đơn giản nó chỉ là một chuỗi "
+msg4 = "`True + False` Không sai. Khi thực hiện phép `+` các giá trị boolean, Python sẽ tự động ép về kiểu số "
 Ex().has_chosen(3, [msg1, msg2, msg3, msg4])
 ```
