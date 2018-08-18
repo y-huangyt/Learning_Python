@@ -29,12 +29,18 @@ Bạn có thể sử dụng  IPython Shell  để gõ các câu lệnh python sa
 `@hint`
 Bạn đã gõ `print(7 + 10)`  vào khung Python Script chưa?
 
+`@pre_exercise_code`
+
+```{python}
+
+```
+
+
 `@sample_code`
 
 ```{python}
 # Ví dụ
 print(5 / 8)
-
 # Gõ code vào đây
 ```
 
@@ -43,7 +49,6 @@ print(5 / 8)
 ```{python}
 # Ví dụ
 print(5 / 8)
-
 # Gõ code vào đây
 print(7 + 10)
 ```
@@ -114,12 +119,18 @@ Thêm chú thích ` # Addition ` phía trên dòng `print(7 + 10)`.
 `@hint`
 Bạn đã thêm chú thích đúng chỗ chưa
 
+`@pre_exercise_code`
+
+```{python}
+
+```
+
+
 `@sample_code`
 
 ```{python}
 # Division
 print(5 / 8)
-
 
 print(7 + 10)
 ```
@@ -129,7 +140,6 @@ print(7 + 10)
 ```{python}
 # Division
 print(5 / 8)
-
 # Addition
 print(7 + 10)
 ```
@@ -168,19 +178,24 @@ Hãy viết đoạn code tính tổng tiền bạn có sau 7 năm.
 `@hint`
 Sau năm thứ 2 bạn có $100 \times 1.1 \times 1.1 = 100 \times 1.1^2$. Sau 7 năm bạn sẽ có bao nhiêu? Sử dụng  `*` và`**`.
 
+`@pre_exercise_code`
+
+```{python}
+
+```
+
+
 `@sample_code`
 
 ```{python}
 # Cộng, trừ
 print(5 + 5)
 print(5 - 5)
-
 # Nhân, Chia, Modulo, Lũy thừa
 print(3 * 5)
 print(10 / 2)
 print(18 % 7)
 print(4 ** 2)
-
 # Số tiền bạn có được sau 7 năm?
 ```
 
@@ -190,13 +205,11 @@ print(4 ** 2)
 # Cộng, trừ
 print(5 + 5)
 print(5 - 5)
-
 # Nhân, Chia, Modulo, Lũy thừa
 print(3 * 5)
 print(10 / 2)
 print(18 % 7)
 print(4 ** 2)
-
 # Số tiền bạn có được sau 7 năm?
 print(100 * 1.1 ** 7)
 ```
@@ -237,11 +250,17 @@ Nhớ rằng, `=` trong Python có nghĩa là   _phép gán_,  Không phải so 
 `@hint`
 - Cái này dễ mà, thử lại nào!!
 
+`@pre_exercise_code`
+
+```{python}
+
+```
+
+
 `@sample_code`
 
 ```{python}
 # Tạo biến savings
-
 
 # In ra giá trị savings
 ```
@@ -251,7 +270,6 @@ Nhớ rằng, `=` trong Python có nghĩa là   _phép gán_,  Không phải so 
 ```{python}
 # Tạo biến savings
 savings = 100
-
 # In ra giá trị savingsprint(savings)
 ```
 
@@ -291,17 +309,21 @@ Hãy nhớ lại bài trước đó, dưới đây là kết quả số tiền b
 - Tạo biến `factor`, dùng lệnh `factor = 1.10`.
 - Thay  `100` bằng `savings` và `1.10` bằng  `factor`: `savings * factor ** 7`.
 
+`@pre_exercise_code`
+
+```{python}
+
+```
+
+
 `@sample_code`
 
 ```{python}
 # Khai báo biến savings
 savings = 100
-
 # Khai báo biến factor
 
-
 # Tính kết quả và lưu vào biến: result
-
 
 # In kết quả
 ```
@@ -311,13 +333,10 @@ savings = 100
 ```{python}
 # Khai báo biến savings
 savings = 100
-
 # Khai báo biến factor
 factor = 1.1
-
 # Tính kết quả và lưu vào biến: result
 result = savings * factor ** 7
-
 # In kết quả 
 print(result)
 ```
@@ -367,11 +386,17 @@ Ngoài kiểu số còn có 2 kiểu dữ liệu rất phổ biến:
 - Hãy chắc rằng chuỗi bạn truyền vào nằm trong `'` hoặc `"`.
 - `True` chỉ viết hoa chữ cái đầu
 
+`@pre_exercise_code`
+
+```{python}
+
+```
+
+
 `@sample_code`
 
 ```{python}
 # Khai báo biến msg
-
 
 # Khai báo biến
 ```
@@ -381,7 +406,6 @@ Ngoài kiểu số còn có 2 kiểu dữ liệu rất phổ biến:
 ```{python}
 # Khai báo biến msg
 msg = "Hello World!"
-
 # Khai báo biến
 newbie = True
 ```
@@ -472,6 +496,13 @@ Tương tự với thao tác nhân.
 -  `triple_msg = msg * 3`.
 - Để in ra giá trị của biến `x`, sử dụng `print(x)`.
 
+`@pre_exercise_code`
+
+```{python}
+
+```
+
+
 `@sample_code`
 
 ```{python}
@@ -479,12 +510,9 @@ msg = "Hello World!"
 
 # Sử dụng thao tác cộng msg và msg và lưu giá trị vào double_msg
 
-
 # In ra kiểu của biến double_msg
 
-
 # Sử dụng thao tác nhân msg với 3  và lưu giá trị vào triple_msg
-
 
 # Xuất ra giá trị của triple_msg
 ```
@@ -493,16 +521,12 @@ msg = "Hello World!"
 
 ```{python}
 msg = "Hello World!"
-
 # Sử dụng thao tác cộng msg và msg và lưu giá trị vào double_msg
 double_msg = msg + msg
-
 # In ra kiểu của biến double_msg
 print(type(double_msg))
-
 # Sử dụng thao tác nhân msg với 3 và lưu giá trị vào triple_msg
 triple_msg = msg * 3
-
 # Xuất ra giá trị của triple_msg
 print(triple_msg)
 ```
@@ -549,24 +573,25 @@ key: 085bb602b9
 Bằng cách sử dụng toán tử `+` giữa các chuỗi, ta có thể xuất ra một câu tùy chỉnh:
 
 ```
-print("I started with $" + savings + " and now have $" + result + ". Awesome!")
+print("sau" + year + "năm từ số tiền " + savings +"$ ban đầu, chúng ta có thể kiếm được " + result + "$")
 ```
 
-This will not work, though, as you cannot simply sum strings and floats.
+Câu lệnh trên sẽ báo sai bởi vì chúng ta không thể cộng một chuỗi và 1 số .
 
-To fix the error, you'll need to explicitly convert the types of your variables. More specifically, you'll need [`str()`](https://docs.python.org/3/library/functions.html#func-str), to convert a value into a string. `str(savings)`, for example, will convert the float `savings` to a string.
+Để sửa lỗi này bạn chỉ cần ép kiểu số về kiểu chuỗi [`str()`](https://docs.python.org/3/library/functions.html#func-str).
+Ví dụ `str(year)` sẽ ép kiểu số của biến `year` về kiểu chuỗi.
 
-Similar functions such as [`int()`](https://docs.python.org/3/library/functions.html#int), [`float()`](https://docs.python.org/3/library/functions.html#float) and [`bool()`](https://docs.python.org/3/library/functions.html#bool) will help you convert Python values into any type.
+Tương tự ta cũng có các hàm [`int()`](https://docs.python.org/3/library/functions.html#int), [`float()`](https://docs.python.org/3/library/functions.html#float) và [`bool()`](https://docs.python.org/3/library/functions.html#bool) để ép kiểu dữ liệu.
 
 
 `@instructions`
-- Hit _Run Code_ to run the code on the right. Try to understand the error message.
-- Fix the code on the right such that the printout runs without errors; use the function [`str()`](https://docs.python.org/3/library/functions.html#func-str) to convert the variables to strings.
-- Convert the variable `pi_string` to a float and store this float as a new variable, `pi_float`.
+- Nhấn _Run Code_ để xem thông báo lỗi 
+- sửa code bằng cách sử dụng hàm [`str()`](https://docs.python.org/3/library/functions.html#func-str) để ép kiểu số sang chuỗi.
+- ép kiểu của biến `pi_string` từ chuỗi sang số và gán vào biến `pi_float`.
 
 `@hint`
-- You should use [`str()`](https://docs.python.org/3/library/functions.html#func-str) twice!
-- Use [`float()`](https://docs.python.org/3/library/functions.html#float) on `pi_string` and store the result in `pi_float`.
+- Bạn nên sử dụng [`str()`](https://docs.python.org/3/library/functions.html#func-str)!
+- Bạn nên sử dụng [`float()`](https://docs.python.org/3/library/functions.html#float) để ép kiểu cho  `pi_string` và lưu nó vào `pi_float`.
 
 `@pre_exercise_code`
 
@@ -582,13 +607,10 @@ Similar functions such as [`int()`](https://docs.python.org/3/library/functions.
 savings = 100
 year = 7
 result = 100 * 1.10 ** 7
-
 # Sửa code cho đúng 
-print("sau" + year + "năm từ số tiền " + savings +"$ ban đầu, chúng ta có thể kiếm được " + result + "$")
-
+print("sau " + year + " năm từ số tiền " + savings +"$ ban đầu, chúng ta có thể kiếm được " + result + "$")
 # Khởi tạo biến pi_string
 pi_string = "3.1415926"
-
 # Ép kiểu của pi_string về float: pi_float
 ```
 
@@ -599,13 +621,10 @@ pi_string = "3.1415926"
 savings = 100
 year = 7
 result = 100 * 1.10 ** 7
-
 # Sửa code cho đúng 
-print("sau" + str(year) + "năm từ số tiền " + str(savings) +"$ ban đầu, chúng ta có thể kiếm được " + str(result) + "$")
-
+print("sau " + str(year) + " năm từ số tiền " + str(savings) +"$ ban đầu, chúng ta có thể kiếm được " + str(result) + "$")
 # Khởi tạo biến pi_string
 pi_string = "3.1415926"
-
 # Ép kiểu của pi_string về float: pi_float
 pi_float = float(pi_string)
 ```
