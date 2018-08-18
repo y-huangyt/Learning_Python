@@ -607,7 +607,7 @@ print("sau" + str(year) + "năm từ số tiền " + str(savings) +"$ ban đầu
 pi_string = "3.1415926"
 
 # Ép kiểu của pi_string về float: pi_float
-#float(pi_string)
+float(pi_string)
 ```
 
 `@sct`
@@ -631,7 +631,13 @@ Ex().check_correct(
 )
 
 # check pi_float
-
+Ex().check_correct(
+    check_object("pi_float").has_equal_value(),
+    multi(
+        check_object("pi_string").has_equal_value(),
+        check_function("float", missing_msg = "a").has_equal_value(incorrect_msg="Sử dụng `float(pi_string) để tạo biến `pi_float`.")
+    )
+)
 
 success_msg("Tuyệt")
 ```
