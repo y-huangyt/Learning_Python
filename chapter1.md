@@ -452,7 +452,7 @@ Ex().has_chosen(3,[msg1, msg2, msg3, msg4])
 
 ---
 
-## Operations with other types
+## Một số thao tác trên chuỗi
 
 ```yaml
 type: NormalExercise 
@@ -463,90 +463,83 @@ key: 4d0d83cc02
 ```
 
 
-Filip mentioned that different types behave differently in Python.
-
-When you sum two strings, for example, you'll get different behavior than when you sum two integers or two booleans.
-
-In the script some variables with different types have already been created. It's up to you to use them.
+Thao tác cộng chuỗi khác với cộng trên số. Thao tác này sẽ làm chuỗi của bạn được thêm vào 1 chuỗi giống hệt chuỗi trước đó.
+Tương tự với thao tác nhân.
 
 
 `@instructions`
-- Calculate the product of `savings` and `factor`. Store the result in `year1`.
-- What do you think the resulting type will be? Find out by printing out the type of `year1`.
-- Calculate the sum of `desc` and `desc` and store the result in a new variable `doubledesc`.
-- Print out `doubledesc`. Did you expect this?
+-  Sử dụng thao tác cộng `msg` và `msg` và lưu giá trị vào `double_msg`
+- In ra kiểu của biến `double_msg`, sử dụng `type()`
+- Sử dụng thao tác nhân `msg` với `3`  và lưu giá trị vào `triple_msg`
+- Xuất ra giá trị của `triple_msg`
 
 `@hint`
-- Assign `factor * savings` to a new variable, `year1`.
-- To print the type of a variable `x`, use `print(type(x))`.
-- Assign `desc + desc` to a new variable, `doubledesc`.
-- To print a variable `x`, write `print(x)` in the script.
+- `double_msg  = msg + msg`.
+- Để in ra kiểu của biến  `x`, sử dụng `print(type(x))`.
+-  `triple_msg = msg * 3`.
+- Để in ra giá trị của biến `x`, sử dụng `print(x)`.
+
+`@pre_exercise_code`
+
+```{python}
+
+```
+
 
 `@sample_code`
 
 ```{python}
-savings = 100
-factor = 1.1
-desc = "compound interest"
+msg = "Hello World!"
 
-# Assign product of factor and savings to year1
+# Sử dụng thao tác cộng msg và msg và lưu giá trị vào double_msg
 
 
-# Print the type of year1
+# In ra kiểu của biến double_msg
 
 
-# Assign sum of desc and desc to doubledesc
+# Sử dụng thao tác nhân msg với 3  và lưu giá trị vào triple_msg
 
 
-# Print out doubledesc
+# Xuất ra giá trị của triple_msg
 ```
 
 `@solution`
 
 ```{python}
-savings = 100
-factor = 1.1
-desc = "compound interest"
+msg = "Hello World!"
 
-# Assign product of savings and factor to year1
-year1 = savings * factor
+# Sử dụng thao tác cộng msg và msg và lưu giá trị vào double_msg
+double_msg = msg + msg
 
-# Print the type of year1
-print(type(year1))
+# In ra kiểu của biến double_msg
+print(type(double_msg))
 
-# Assign sum of desc and desc to doubledesc
-doubledesc = desc + desc
+# Sử dụng thao tác nhân msg với 3 và lưu giá trị vào triple_msg
+triple_msg = msg * 3
 
-# Print out doubledesc
-print(doubledesc)
+# Xuất ra giá trị của triple_msg
+print(triple_msg)
 ```
 
 `@sct`
 
 ```{python}
 # predefined
-msg = "You don't have to change or remove the predefined variables."
-objs = ["savings", "factor", "desc", "year1"]
-Ex().multi(
-    check_object('savings', missing_msg=msg).has_equal_value(incorrect_msg=msg),
-    check_object('factor', missing_msg=msg).has_equal_value(incorrect_msg=msg),
-    check_object('desc', missing_msg=msg).has_equal_value(incorrect_msg=msg),
-    check_object('year1', missing_msg=msg).has_equal_value(incorrect_msg=msg)
-)
-
+msg = "Vui lòng đừng xóa biến msg."
+Ex().check_object('msg', missing_msg=msg).has_equal_value(incorrect_msg=msg)
 # check year1 and printout
 Ex().multi(
-    check_object("year1").has_equal_value(incorrect_msg="Multiply `savings` and `factor` to create the `year1` variable."),
-    has_printout(0, not_printed_msg = "__JINJA__:Use `{{sol_call}}` to print out the type of `year1`.")
+    check_object("double_msg").has_equal_value(incorrect_msg="Thực hiện thao tác cộng giữa msg và msg."),
+    has_printout(0, not_printed_msg = "__JINJA__:Use `{{sol_call}}` Xuất ra kiểu của `double_msg`.")
 )
 
 # check doubledesc and prinout
 Ex().multi(
-    check_object("doubledesc").has_equal_value(incorrect_msg  = "Have you stored the result of `desc + desc` in `doubledesc`?"),
-    has_printout(1, not_printed_msg = "Don't forget to print out `doubledesc`.")
+    check_object("triple_msg").has_equal_value(incorrect_msg  = "bạn đã lưu giá trị lại chưa"),
+    has_printout(1, not_printed_msg = "Đừng quên xuất giá trị của `triple_msg`.")
 )
 
-success_msg("Nice. Notice how `desc + desc` causes `\"compound interest\"` and `\"compound interest\"` to be pasted together.")
+success_msg("Tốt.")
 ```
 
 ---
