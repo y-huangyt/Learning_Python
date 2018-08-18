@@ -367,13 +367,6 @@ Ngoài kiểu số còn có 2 kiểu dữ liệu rất phổ biến:
 - Hãy chắc rằng chuỗi bạn truyền vào nằm trong `'` hoặc `"`.
 - `True` chỉ viết hoa chữ cái đầu
 
-`@pre_exercise_code`
-
-```{python}
-
-```
-
-
 `@sample_code`
 
 ```{python}
@@ -479,13 +472,6 @@ Tương tự với thao tác nhân.
 -  `triple_msg = msg * 3`.
 - Để in ra giá trị của biến `x`, sử dụng `print(x)`.
 
-`@pre_exercise_code`
-
-```{python}
-
-```
-
-
 `@sample_code`
 
 ```{python}
@@ -534,7 +520,6 @@ Ex().multi(
     has_printout(0, not_printed_msg = "__JINJA__:Sử dụng `{{sol_call}}` Xuất ra kiểu của `double_msg`.")
 )
 msg3 = "Bạn đã thực hiện thao tác nhân chưa"
-
 # check doubledesc and prinout
 Ex().multi(
     check_object("triple_msg").has_equal_value(incorrect_msg = msg3),
@@ -546,7 +531,7 @@ success_msg("Tốt.")
 
 ---
 
-## Type conversion
+## Ép kiểu
 
 ```yaml
 type: NormalExercise 
@@ -557,9 +542,11 @@ key: 085bb602b9
 ```
 
 
-Using the `+` operator to paste together two strings can be very useful in building custom messages.
+Ở bài học 6, ta tính được số tiền sở hữu sau 7 năm được lưu vào biến `result` và chỉ xuất ra được con số duy nhất. Vậy để in ra một kết quả có kèm theo chuỗi thông báo là :  
 
-Suppose, for example, that you've calculated the return of your investment and want to summarize the results in a string. Assuming the floats `savings` and `result` are defined, you can try something like this:
+> "sau `year` năm từ số tiền `savings` ban đầu, chúng ta có thể kiếm được  `result`$ "
+
+Bằng cách sử dụng toán tử `+` giữa các chuỗi, ta có thể xuất ra một câu tùy chỉnh:
 
 ```
 print("I started with $" + savings + " and now have $" + result + ". Awesome!")
@@ -581,54 +568,65 @@ Similar functions such as [`int()`](https://docs.python.org/3/library/functions.
 - You should use [`str()`](https://docs.python.org/3/library/functions.html#func-str) twice!
 - Use [`float()`](https://docs.python.org/3/library/functions.html#float) on `pi_string` and store the result in `pi_float`.
 
+`@pre_exercise_code`
+
+```{python}
+
+```
+
+
 `@sample_code`
 
 ```{python}
-# Definition of savings and result
+# Cho trước các biến
 savings = 100
+year = 7
 result = 100 * 1.10 ** 7
 
-# Fix the printout
-print("I started with $" + savings + " and now have $" + result + ". Awesome!")
+# Sửa code cho đúng 
+print("sau" + year + "năm từ số tiền " + savings +"$ ban đầu, chúng ta có thể kiếm được " + result + "$")
 
-# Definition of pi_string
+# Khởi tạo biến pi_string
 pi_string = "3.1415926"
 
-# Convert pi_string into float: pi_float
+# Ép kiểu của pi_string về float: pi_float
 ```
 
 `@solution`
 
 ```{python}
-# Definition of savings and result
+# Cho trước các biến
 savings = 100
+year = 7
 result = 100 * 1.10 ** 7
 
-# Fix the printout
-print("I started with $" + str(savings) + " and now have $" + str(result) + ". Awesome!")
+# Sửa code cho đúng 
+print("sau" + str(year) + "năm từ số tiền " + str(savings) +"$ ban đầu, chúng ta có thể kiếm được " + str(result) + "$")
 
-# Definition of pi_string
+# Khởi tạo biến pi_string
 pi_string = "3.1415926"
 
-# Convert pi_string into float: pi_float
-pi_float = float(pi_string)
+# Ép kiểu của pi_string về float: pi_float
+float(pi_string)
 ```
 
 `@sct`
 
 ```{python}
 # ensure predefined values are unmodified
-msg = "You don't have to change or remove the predefined variables."
+msg = "Không nên xóa các biến đã được tạo sẵn."
 Ex().multi(
     check_object("savings", missing_msg=msg).has_equal_ast(incorrect_msg=msg),
+  	check_object("year", missing_msg=msg).has_equal_ast(incorrect_msg=msg),
     check_object("result", missing_msg=msg).has_equal_ast(incorrect_msg=msg)
 )
 
 Ex().check_correct(
     has_printout(0),
     multi(
-        check_function("str", 0).check_args(0).has_equal_value(incorrect_msg="Inside the `print()` command, make sure to convert `savings` into a string with `str(savings)`."),
-        check_function("str", 1).check_args(0).has_equal_value(incorrect_msg="Inside the `print()` command, make sure to convert `result` into a string `str(result)`.")
+      	check_function("str", 0).check_args(0).has_equal_value(incorrect_msg="Hãy chắc chắn rằng bạn đã ép kiểu của biến `year` về kiểu chuỗi bằng `str(year)`."),
+        check_function("str", 1).check_args(0).has_equal_value(incorrect_msg="Hãy chắc chắn rằng bạn đã ép kiểu của biến `savings` về kiểu chuỗi bằng `str(savings)`."),
+        check_function("str", 2).check_args(0).has_equal_value(incorrect_msg="Hãy chắc chắn rằng bạn đã ép kiểu của biến `result` về kiểu chuỗi bằng `str(result)`."),
     )
 )
 
@@ -637,11 +635,11 @@ Ex().check_correct(
     check_object("pi_float").has_equal_value(),
     multi(
         check_object("pi_string").has_equal_value(),
-        check_function("float", missing_msg = "In order to convert `pi_string` to a float, be sure to use the `float()` function.").has_equal_value(incorrect_msg="Use `float(pi_string) to create the variable `pi_float`.")
+        check_function("float", missing_msg = "Để ép về float hãy dùng hàm `float()`.").has_equal_value(incorrect_msg="Sử dụng `float(pi_string) để tạo biến `pi_float`.")
     )
 )
 
-success_msg("Great! You have a profit of around $95; that's pretty awesome indeed!")
+success_msg("Tuyệt")
 ```
 
 ---
