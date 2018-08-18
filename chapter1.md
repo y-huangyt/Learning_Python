@@ -237,13 +237,6 @@ Nhớ rằng, `=` trong Python có nghĩa là   _phép gán_,  Không phải so 
 `@hint`
 - Cái này dễ mà, thử lại nào!!
 
-`@pre_exercise_code`
-
-```{python}
-
-```
-
-
 `@sample_code`
 
 ```{python}
@@ -345,7 +338,7 @@ success_msg("Tuyệt!")
 
 ---
 
-## Other variable types
+## Các kiểu biến trong Python
 
 ```yaml
 type: NormalExercise 
@@ -356,55 +349,61 @@ key: 006b48561f
 ```
 
 
-In the previous exercise, you worked with two Python data types:
+Trong bài tập trước, chúng ta đã làm quen với 2 kiểu biến trong Python
+- `int` : kiểu số nguyên
+- `float` : kiểu thập phân.
 
-- `int`, or integer: a number without a fractional part. `savings`, with the value `100`, is an example of an integer.
-- `float`, or floating point: a number that has both an integer and fractional part, separated by a point. `factor`, with the value `1.10`, is an example of a float.
+Ngoài kiểu số còn có 2 kiểu dữ liệu rất phổ biến:
 
-Next to numerical data types, there are two other very common data types:
-
-- `str`, or string: a type to represent text. You can use single or double quotes to build a string.
-- `bool`, or boolean: a type to represent logical values. Can only be `True` or `False` (the capitalization is important!).
+- `str`, : Kiểu chuỗi, được đặt trong nháy đơn `'` hoặc nháy kép `"`.
+- `bool`: Kiểu logic, chỉ mang giá trị `True` hoặc `False`(Lưu ý là viết Hoa chữ cái đầu).
 
 
 `@instructions`
-- Create a new string, `desc`, with the value `"compound interest"`.
-- Create a new boolean, `profitable`, with the value `True`.
+- Khai báo biến kiểu string , `msg` với giá trị `"Hello World!"`.
+- Khai báo biến kiể boolean, `newbie`, với giá trị `True`.
 
 `@hint`
-- To create a variable in Python, use `=`. Make sure to wrap your string in single or double quotes.
-- Only two boolean values exist in Python: `True` and `False`. `TRUE`, `true`, `FALSE`, `false` and other versions will not be accepted.
+- Hãy chắc rằng chuỗi bạn truyền vào nằm trong `'` hoặc `"`.
+- `True` chỉ viết hoa chữ cái đầu
+
+`@pre_exercise_code`
+
+```{python}
+
+```
+
 
 `@sample_code`
 
 ```{python}
-# Create a variable desc
+# Khai báo biến msg
 
 
-# Create a variable profitable
+# Khai báo biến
 ```
 
 `@solution`
 
 ```{python}
-# Create a variable desc
-desc = "compound interest"
+# Khai báo biến msg
+msg = "Hello World!"
 
-# Create a variable profitable
-profitable = True
+# Khai báo biến
+newbie = True
 ```
 
 `@sct`
 
 ```{python}
-Ex().check_object("desc").has_equal_value()
-Ex().check_object("profitable").has_equal_value()
-success_msg("Nice!")
+Ex().check_object("msg").has_equal_value()
+Ex().check_object("newbie").has_equal_value()
+success_msg("Xong!")
 ```
 
 ---
 
-## Guess the type
+## Kiểm tra kiểu dữ liệu
 
 ```yaml
 type: MultipleChoiceExercise 
@@ -415,23 +414,23 @@ key: b35f67514c
 ```
 
 
-To find out the type of a value or a variable that refers to that value, you can use the [`type()`](https://docs.python.org/3/library/functions.html#type) function. Suppose you've defined a variable `a`, but you forgot the type of this variable. To determine the type of `a`, simply execute:
+Để kiểm tra kiểu dữ liệu của một biến hoặc một giá trị, ta dùng hàm  [`type()`](https://docs.python.org/3/library/functions.html#type) function. Để kiểm tra kiểu dữ liệu của biến `a` ta chỉ cần gọi `type(a)`:
 
 ```
 type(a)
 ```
 
-We already went ahead and created three variables: `a`, `b` and `c`. You can use the IPython shell on the right to discover their type. Which of the following options is correct?
+Chúng tôi đã khai báo sẵn ba biến `a`, `b` and `c`. Bằng cách sử dụng `type()` trong khung _IPython shell_ hãy đánh dấu vào câu trả lời đúng?
 
 
 `@instructions`
-- `a` is of type `int`, `b` is of type `str`, `c` is of type `bool`
-- `a` is of type `float`, `b` is of type `bool`, `c` is of type `str`
-- `a` is of type `float`, `b` is of type `str`, `c` is of type `bool`
-- `a` is of type `int`, `b` is of type `bool`, `c` is of type `str`
+- `a` thuộc kiểu `int`, `b` thuộc kiểu  `str`, `c` thuộc kiểu `bool`
+- `a` thuộc kiểu `float`, `b` thuộc kiểu `bool`, `c` thuộc kiểu `str`
+- `a` thuộc kiểu `float`, `b` thuộc kiểu `str`, `c` thuộc kiểu `bool`
+- `a` thuộc kiểu `int`, `b` thuộc kiểu `bool`, `c`thuộc kiểu `str`
 
 `@hint`
-Use `type(a)`, `type(b)` and `type(c)` inside the IPython Shell to find out about the variables' types.
+Sử dụng `type(a)`, `type(b)`, `type(c)`  để kiểm tra.
 
 `@pre_exercise_code`
 
@@ -444,10 +443,10 @@ c = False
 `@sct`
 
 ```{python}
-msg1 = "The type of `a` is not `int`. Try out `type(a)` and see for yourself."
-msg2 = "`b` is not a `bool`, it's a `str`! The fact that `True` is wrapped in double quotes makes it a string."
-msg3 = "Correcto perfecto!"
-msg4 = "None of the variable's types is correct here. Try `type(a)` and see what type this variable is."
+msg1 = "`a` Không phải kiểu `int`."
+msg2 = "`b` Không phải kiểu `bool`, nó là kiểu `str`! Vì True nằm trong nháy kép "
+msg3 = "Chính xác!"
+msg4 = "Không có khẳng định nào là đúng trong câu này."
 Ex().has_chosen(3,[msg1, msg2, msg3, msg4])
 ```
 
