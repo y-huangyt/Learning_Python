@@ -626,7 +626,7 @@ key: 3e5f0bdf3a
 ```
 
 
-Câu hỏi trắc nghiệm cuối chương. Đáp án nào là chính xác
+Câu hỏi trắc nghiệm cuối chương. Đáp án nào là  không chính xác
 
 Bạn có thể copy các dòng lệnh và chạy nó trong khung _IPython Shell_ để kiểm tra kết quả
 
@@ -639,6 +639,13 @@ Bạn có thể copy các dòng lệnh và chạy nó trong khung _IPython Shell
 
 `@hint`
 Bạn có thể copy các dòng lệnh và chạy nó trong khung _IPython Shell_ để kiểm tra kết quả
+
+`@pre_exercise_code`
+
+```{python}
+
+```
+
 
 `@sct`
 
