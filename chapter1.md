@@ -352,13 +352,6 @@ Ngoài kiểu số còn có 2 kiểu dữ liệu rất phổ biến:
 - Hãy chắc rằng chuỗi bạn truyền vào nằm trong `'` hoặc `"`.
 - `True` chỉ viết hoa chữ cái đầu
 
-`@pre_exercise_code`
-
-```{python}
-
-```
-
-
 `@sample_code`
 
 ```{python}
@@ -615,7 +608,7 @@ success_msg("Tuyệt")
 
 ---
 
-## Can Python handle everything?
+## Tổng kết chương 1
 
 ```yaml
 type: MultipleChoiceExercise 
