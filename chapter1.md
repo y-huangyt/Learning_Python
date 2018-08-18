@@ -529,8 +529,8 @@ msg = "Vui lòng đừng xóa biến msg."
 Ex().check_object('msg', missing_msg=msg).has_equal_value(incorrect_msg=msg)
 # check year1 and printout
 Ex().multi(
-    check_object("double_msg").has_equal_value(incorrect_msg="Thực hiện thao tác cộng giữa msg và msg."),
-    has_printout(0, not_printed_msg = "__JINJA__:Use `{{sol_call}}` Xuất ra kiểu của `double_msg`.")
+    check_object("double_msg").has_equal_value(incorrect_msg="Bạn đã thực hiện thao tác cộng chưa"),
+    has_printout(0, not_printed_msg = "__JINJA__:Sử dụng `{{sol_call}}` Xuất ra kiểu của `double_msg`.")
 )
 
 # check doubledesc and prinout
