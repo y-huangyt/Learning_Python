@@ -542,7 +542,7 @@ key: 085bb602b9
 ```
 
 
-Ở bài học 6, ta tính được số tiền sở hữu sau 7 năm được lưu vào biến `result` và chỉ xuất ra được con số duy nhất. Vậy để in ra một kết quả có kèm theo chuỗi thông báo là :  
+Ở bài học 6, từ số tiền `savings` ta tính được số tiền sở hữu sau `year` năm được lưu vào biến `result` và chỉ xuất ra được con số duy nhất. Vậy để in ra một kết quả có kèm theo chuỗi thông báo là :  
 
 > "sau `year` năm từ số tiền `savings` ban đầu, chúng ta có thể kiếm được  `result`$ "
 
@@ -607,7 +607,7 @@ print("sau" + str(year) + "năm từ số tiền " + str(savings) +"$ ban đầu
 pi_string = "3.1415926"
 
 # Ép kiểu của pi_string về float: pi_float
-float(pi_string)
+pi_float = float(pi_string)
 ```
 
 `@sct`
@@ -635,7 +635,7 @@ Ex().check_correct(
     check_object("pi_float").has_equal_value(),
     multi(
         check_object("pi_string").has_equal_value(),
-        check_function("float", missing_msg = "a").has_equal_value(incorrect_msg="Sử dụng `float(pi_string) để tạo biến `pi_float`.")
+        check_function("float", missing_msg = "In order to convert `pi_string` to a float, be sure to use the `float()` function.").has_equal_value(incorrect_msg="Use `float(pi_string) to create the variable `pi_float`.")
     )
 )
 
