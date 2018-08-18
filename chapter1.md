@@ -248,7 +248,7 @@ Nhớ rằng, `=` trong Python có nghĩa là   _phép gán_,  Không phải so 
 - Xuất ra giá trị của biến với cú pháp  `print(savings)` .
 
 `@hint`
-- Cái này dễ mà, thử lại nào!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+- Cái này dễ mà, thử lại nào!
 
 `@pre_exercise_code`
 
