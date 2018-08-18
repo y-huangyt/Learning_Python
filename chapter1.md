@@ -528,14 +528,16 @@ print(triple_msg)
 msg = "Vui lòng đừng xóa biến msg."
 Ex().check_object('msg', missing_msg=msg).has_equal_value(incorrect_msg=msg)
 # check year1 and printout
+msg2 = "Bạn đã thực hiện thao tác cộng chưa"
 Ex().multi(
-    check_object("double_msg").has_equal_value(incorrect_msg="Bạn đã thực hiện thao tác cộng chưa"),
+    check_object("double_msg").has_equal_value(incorrect_msg=msg2),
     has_printout(0, not_printed_msg = "__JINJA__:Sử dụng `{{sol_call}}` Xuất ra kiểu của `double_msg`.")
 )
+msg3 = "Bạn đã thực hiện thao tác nhân chưa"
 
 # check doubledesc and prinout
 Ex().multi(
-    check_object("triple_msg").has_equal_value(incorrect_msg  = "bạn đã lưu giá trị lại chưa"),
+    check_object("triple_msg").has_equal_value(incorrect_msg = msg3),
     has_printout(1, not_printed_msg = "Đừng quên xuất giá trị của `triple_msg`.")
 )
 
