@@ -1,22 +1,18 @@
 ---
-title: 'Python list'
+title: List
 description: ""
 ---
 
-## Tạo list
+## Khởi tạo list
 
 ```yaml
 type: NormalExercise
-key: 747b234047
+key: 58fdf939e4
 xp: 100
 ```
 
-Khác với `bool`, `int`,`float`,... list là một loại kiểu dữ liệu phức hợp. Ví dụ
-```
-a = "is"
-b = "nice"
-my_list = ["my", "list", a, b]
-```
+Khác với kiểu dữ liệu `int`,`bool`, list là 1 kiểu dữ liệu phức hợp, có khả lưu trữ các kiểu dữ liệu khác nhau
+``
 
 `@instructions`
 
