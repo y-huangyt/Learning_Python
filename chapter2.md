@@ -21,28 +21,21 @@ Khác với kiểu dữ liệu `int`,`bool`, list là 1 kiểu dữ liệu phứ
 
 
 `@pre_exercise_code`
-
 ```{python}
 
 ```
-
 
 `@sample_code`
-
 ```{python}
 
 ```
-
 
 `@solution`
-
 ```{python}
 
 ```
 
-
 `@sct`
-
 ```{python}
 
 ```
