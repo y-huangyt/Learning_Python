@@ -1,25 +1,23 @@
 ---
-  title: "Hello World"
-  description: "Python cơ bản"
+title: 'Hello World'
+description: 'Python cơ bản'
 ---
 
 ## Giao diện Python trên Data Camp
 
 ```yaml
-type: NormalExercise 
+type: NormalExercise
+key: bdc52f0e19
 lang: python
-xp: 100 
+xp: 100
 skills: 2
-key: bdc52f0e19   
 ```
-
 
 Trong khung script python bên phải, bạn có thể gõ code Python để làm bài tập. Khi bạn nhấn _Run Code_ hoặc _Submit Answer_, script python (`script.py`) sẽ được thực thi và kết quả sẽ được hiện thị ở khung IPython Shell(Khung phía dưới). _Submit Answer_ kiểm tra bài làm của bạn có đúng không và thông báo kết quả.
 
  Nếu cảm thấy yêu cầu của bài hơi khó, bạn có thể click vào _Take Hint_ hoặc  _Take Solution_ . Dĩ nhiên bạn sẽ bị mất đi 1 phần Xp khi click vào các nút này.
 
 Bạn có thể sử dụng  IPython Shell  để gõ các câu lệnh python sau đó nhấn Enter.  Sử dụng nó để kiểm tra lỗi cú pháp hoặc kết quả.
-
 
 `@instructions`
 - Trong khung  IPython Shell; gõ `5 / 8`.
@@ -30,7 +28,6 @@ Bạn có thể sử dụng  IPython Shell  để gõ các câu lệnh python sa
 Bạn đã gõ `print(7 + 10)`  vào khung Python Script chưa?
 
 `@sample_code`
-
 ```{python}
 # Ví dụ
 print(5 / 8)
@@ -38,7 +35,6 @@ print(5 / 8)
 ```
 
 `@solution`
-
 ```{python}
 # Ví dụ
 print(5 / 8)
@@ -47,7 +43,6 @@ print(7 + 10)
 ```
 
 `@sct`
-
 ```{python}
 Ex().has_printout(1, not_printed_msg = "__JINJA__: Bạn đã sử dụng `{{sol_call}}` để in tổng của 7 và 10 chưa?")
 success_msg("Tuyệt! Đến bài tiếp theo nào")
@@ -58,16 +53,14 @@ success_msg("Tuyệt! Đến bài tiếp theo nào")
 ## Bạn sử dụng Python khi nào?
 
 ```yaml
-type: MultipleChoiceExercise 
+type: MultipleChoiceExercise
+key: 9703b117fb
 lang: python
-xp: 50 
+xp: 50
 skills: 2
-key: 9703b117fb   
 ```
 
-
 Python là một ngôn ngữ đa năng. Bạn có thể dùng python khi?
-
 
 `@instructions`
 - Thực hiện một số tính toán một cách nhanh chóng .
@@ -79,7 +72,6 @@ Python là một ngôn ngữ đa năng. Bạn có thể dùng python khi?
 Bạn có thể tra google...
 
 `@sct`
-
 ```{python}
 msg1 = "Chưa chính xác. Python có thể làm được nhiều hơn thế!"
 msg2 = "Chưa chính xác. Framework phổ biến để xây dựng database-driven websites là Django, Nhưng Python còn có thể làm nhiều hơn vậy."
@@ -93,18 +85,16 @@ Ex().has_chosen(4, [msg1, msg2, msg3, msg4])
 ## Thêm chú thích vào Python script
 
 ```yaml
-type: NormalExercise 
+type: NormalExercise
+key: 7c4a738a13
 lang: python
-xp: 100 
+xp: 100
 skills: 2
-key: 7c4a738a13   
 ```
-
 
 Bạn có thể thêm vào dòng chú thích (**comments**) trong file Python scripts. Dòng chú thích giúp người khác đọc lại code của bạn dễ dàng hơn, và cũng để bạn nhớ ra bạn code cái quái gì vào tuần trước.
 
 Để thêm **comments** vào  Python script ,sử dụng `#` tag. Những **comment** này sẽ không được tính là một dòng  code Python, và nó sẽ không ảnh hưởng tới kết quả tính toán.   Trong vị dụ bên phải, mình đã thêm comment : `# Division`
-
 
 `@instructions`
 Thêm chú thích ` # Addition ` phía trên dòng `print(7 + 10)`.
@@ -113,7 +103,6 @@ Thêm chú thích ` # Addition ` phía trên dòng `print(7 + 10)`.
 Bạn đã thêm chú thích đúng chỗ chưa
 
 `@sample_code`
-
 ```{python}
 # Division
 print(5 / 8)
@@ -122,7 +111,6 @@ print(7 + 10)
 ```
 
 `@solution`
-
 ```{python}
 # Division
 print(5 / 8)
@@ -131,7 +119,6 @@ print(7 + 10)
 ```
 
 `@sct`
-
 ```{python}
 Ex().has_code("#\s*(\w+)[\s.!?]*print\s*\(\s*7", not_typed_msg = "Hãy chắc chắn rằng bạn đã thêm phần comment phía trên phần `print(7 + 10)`.")
 success_msg("Tuyệt!")
@@ -142,20 +129,18 @@ success_msg("Tuyệt!")
 ## Tính toán đơn giản bằng Python
 
 ```yaml
-type: NormalExercise 
+type: NormalExercise
+key: 0f7c039428
 lang: python
-xp: 100 
+xp: 100
 skills: 2
-key: 0f7c039428   
 ```
-
 
 Python phù hợp cho các tính toán cơ bản bao gồm cộng trừ nhân chia, ngoài ra nó còn hỗ trợ các phép tính khác
 - Phép lũy thừa: `**`.  Ví dụ `4**2` sẽ cho kết quả là `16`.
 - Modulo: `%`. Cho kết quả là modulo. Ví dụ  `18 % 7` có kết quả là  `4`.
 
 Dưới đây là một ví dụ.
-
 
 `@instructions`
 Giả sử bạn có $100, Bạn có thể gửi ngân hàng với lãi suất  là 10% Mỗi năm. Năm đầu tiên bạn sẽ có  $100 \times 1.1 = 110$ , sau năm thứ hai nó sẽ là  $100 \times 1.1 \times 1.1 = 121$. 
@@ -165,7 +150,6 @@ Hãy viết đoạn code tính tổng tiền bạn có sau 7 năm.
 Sau năm thứ 2 bạn có $100 \times 1.1 \times 1.1 = 100 \times 1.1^2$. Sau 7 năm bạn sẽ có bao nhiêu? Sử dụng  `*` và`**`.
 
 `@sample_code`
-
 ```{python}
 # Cộng, trừ
 print(5 + 5)
@@ -179,7 +163,6 @@ print(4 ** 2)
 ```
 
 `@solution`
-
 ```{python}
 # Cộng, trừ
 print(5 + 5)
@@ -194,7 +177,6 @@ print(100 * 1.1 ** 7)
 ```
 
 `@sct`
-
 ```{python}
 Ex().has_printout(6, not_printed_msg = "Bạn đã thử `print(100 * 1.1 ** 7)` chưa?")
 success_msg("Tuyệt!")
@@ -205,13 +187,12 @@ success_msg("Tuyệt!")
 ## Gán giá trị
 
 ```yaml
-type: NormalExercise 
+type: NormalExercise
+key: 4bf65ad83e
 lang: python
-xp: 100 
+xp: 100
 skills: 2
-key: 4bf65ad83e   
 ```
-
 
 Để khai báo biến và gán giá trị cho python sử dụng ``` Tên biến = giá trị``
 Ví dụ
@@ -221,7 +202,6 @@ x = 5
 
 Nhớ rằng, `=` trong Python có nghĩa là   _phép gán_,  Không phải so sánh bằng~~
 
-
 `@instructions`
 - Tạo biến `savings` Với giá trị 100.
 - Xuất ra giá trị của biến với cú pháp  `print(savings)` .
@@ -230,7 +210,6 @@ Nhớ rằng, `=` trong Python có nghĩa là   _phép gán_,  Không phải so 
 - Cái này dễ mà, thử lại nào!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 `@sample_code`
-
 ```{python}
 # Tạo biến savings
 
@@ -238,7 +217,6 @@ Nhớ rằng, `=` trong Python có nghĩa là   _phép gán_,  Không phải so 
 ```
 
 `@solution`
-
 ```{python}
 # Tạo biến savings
 savings = 100
@@ -247,7 +225,6 @@ print(savings)
 ```
 
 `@sct`
-
 ```{python}
 Ex().check_object("savings").has_equal_value(incorrect_msg="Gán `100` Cho biến `savings`.")
 Ex().has_printout(0, not_printed_msg = "In ra giá trị `savings`, sử dụng `print(savings)`.")
@@ -259,19 +236,17 @@ success_msg("Tuyệt!")
 ## Tính toán với các biến
 
 ```yaml
-type: NormalExercise 
+type: NormalExercise
+key: ff06cedeb4
 lang: python
-xp: 100 
+xp: 100
 skills: 2
-key: ff06cedeb4   
 ```
-
 
 Hãy nhớ lại bài trước đó, dưới đây là kết quả số tiền bạn có được sau 7 năm.
 ```
 100 * 1.10 ** 7
 ```
-
 
 `@instructions`
 - Tạo biến hệ số : `factor`và gán giá trị `1.10`.
@@ -283,7 +258,6 @@ Hãy nhớ lại bài trước đó, dưới đây là kết quả số tiền b
 - Thay  `100` bằng `savings` và `1.10` bằng  `factor`: `savings * factor ** 7`.
 
 `@sample_code`
-
 ```{python}
 # Khai báo biến savings
 savings = 100
@@ -295,7 +269,6 @@ savings = 100
 ```
 
 `@solution`
-
 ```{python}
 # Khai báo biến savings
 savings = 100
@@ -308,7 +281,6 @@ print(result)
 ```
 
 `@sct`
-
 ```{python}
 Ex().check_correct(
   check_object("result").has_equal_value(incorrect_msg="Bạn đã sử dụng `*` and `**` để tính kết quả và lưu vào `result` chưa?"),
@@ -326,13 +298,12 @@ success_msg("Tuyệt!")
 ## Các kiểu biến trong Python
 
 ```yaml
-type: NormalExercise 
+type: NormalExercise
+key: 006b48561f
 lang: python
-xp: 100 
+xp: 100
 skills: 2
-key: 006b48561f   
 ```
-
 
 Trong bài tập trước, chúng ta đã làm quen với 2 kiểu biến trong Python
 - `int` : kiểu số nguyên
@@ -343,7 +314,6 @@ Ngoài kiểu số còn có 2 kiểu dữ liệu rất phổ biến:
 - `str`, : Kiểu chuỗi, được đặt trong nháy đơn `'` hoặc nháy kép `"`.
 - `bool`: Kiểu logic, chỉ mang giá trị `True` hoặc `False`(Lưu ý là viết Hoa chữ cái đầu).
 
-
 `@instructions`
 - Khai báo biến kiểu string , `msg` với giá trị `"Hello World!"`.
 - Khai báo biến kiểu boolean, `newbie`, với giá trị `True`.
@@ -353,7 +323,6 @@ Ngoài kiểu số còn có 2 kiểu dữ liệu rất phổ biến:
 - `True` chỉ viết hoa chữ cái đầu
 
 `@sample_code`
-
 ```{python}
 # Khai báo biến msg
 
@@ -361,7 +330,6 @@ Ngoài kiểu số còn có 2 kiểu dữ liệu rất phổ biến:
 ```
 
 `@solution`
-
 ```{python}
 # Khai báo biến msg
 msg = "Hello World!"
@@ -370,7 +338,6 @@ newbie = True
 ```
 
 `@sct`
-
 ```{python}
 Ex().check_object("msg").has_equal_value()
 Ex().check_object("newbie").has_equal_value()
@@ -382,13 +349,12 @@ success_msg("Xong!")
 ## Kiểm tra kiểu dữ liệu
 
 ```yaml
-type: MultipleChoiceExercise 
+type: MultipleChoiceExercise
+key: b35f67514c
 lang: python
-xp: 50 
+xp: 50
 skills: 2
-key: b35f67514c   
 ```
-
 
 Để kiểm tra kiểu dữ liệu của một biến hoặc một giá trị, ta dùng hàm  [`type()`](https://docs.python.org/3/library/functions.html#type) function. Để kiểm tra kiểu dữ liệu của biến `a` ta chỉ cần gọi `type(a)`:
 
@@ -397,7 +363,6 @@ type(a)
 ```
 
 Chúng tôi đã khai báo sẵn ba biến `a`, `b` and `c`. Bằng cách sử dụng `type()` trong khung _IPython shell_ hãy đánh dấu vào câu trả lời đúng?
-
 
 `@instructions`
 - `a` thuộc kiểu `int`, `b` thuộc kiểu  `str`, `c` thuộc kiểu `bool`
@@ -409,7 +374,6 @@ Chúng tôi đã khai báo sẵn ba biến `a`, `b` and `c`. Bằng cách sử d
 Sử dụng `type(a)`, `type(b)`, `type(c)`  để kiểm tra.
 
 `@pre_exercise_code`
-
 ```{python}
 a = 100*1.1**7
 b = "True"
@@ -417,7 +381,6 @@ c = False
 ```
 
 `@sct`
-
 ```{python}
 msg1 = "`a` Không phải kiểu `int`."
 msg2 = "`b` Không phải kiểu `bool`, nó là kiểu `str`! Vì True nằm trong nháy kép "
@@ -431,17 +394,15 @@ Ex().has_chosen(3,[msg1, msg2, msg3, msg4])
 ## Một số thao tác trên chuỗi
 
 ```yaml
-type: NormalExercise 
+type: NormalExercise
+key: 4d0d83cc02
 lang: python
-xp: 100 
+xp: 100
 skills: 2
-key: 4d0d83cc02   
 ```
-
 
 Thao tác cộng chuỗi khác với cộng trên số. Thao tác này sẽ làm chuỗi của bạn được thêm vào 1 chuỗi giống hệt chuỗi trước đó.
 Tương tự với thao tác nhân.
-
 
 `@instructions`
 -  Sử dụng thao tác cộng `msg` và `msg` và lưu giá trị vào `double_msg`
@@ -456,7 +417,6 @@ Tương tự với thao tác nhân.
 - Để in ra giá trị của biến `x`, sử dụng `print(x)`.
 
 `@sample_code`
-
 ```{python}
 msg = "Hello World!"
 
@@ -470,7 +430,6 @@ msg = "Hello World!"
 ```
 
 `@solution`
-
 ```{python}
 msg = "Hello World!"
 # Sử dụng thao tác cộng msg và msg và lưu giá trị vào double_msg
@@ -484,7 +443,6 @@ print(triple_msg)
 ```
 
 `@sct`
-
 ```{python}
 # predefined
 msg = "Vui lòng đừng xóa biến msg."
@@ -510,13 +468,12 @@ success_msg("Tốt.")
 ## Ép kiểu
 
 ```yaml
-type: NormalExercise 
+type: NormalExercise
+key: 085bb602b9
 lang: python
-xp: 100 
+xp: 100
 skills: 2
-key: 085bb602b9   
 ```
-
 
 Ở bài học 6, từ số tiền `savings` ta tính được số tiền sở hữu sau `year` năm được lưu vào biến `result` và chỉ xuất ra được con số duy nhất. Vậy để in ra một kết quả có kèm theo chuỗi thông báo là :  
 
@@ -535,7 +492,6 @@ Ví dụ `str(year)` sẽ ép kiểu số của biến `year` về kiểu chuỗ
 
 Tương tự ta cũng có các hàm [`int()`](https://docs.python.org/3/library/functions.html#int), [`float()`](https://docs.python.org/3/library/functions.html#float) và [`bool()`](https://docs.python.org/3/library/functions.html#bool) để ép kiểu dữ liệu.
 
-
 `@instructions`
 - Nhấn _Run Code_ để xem thông báo lỗi 
 - sửa code bằng cách sử dụng hàm [`str()`](https://docs.python.org/3/library/functions.html#func-str) để ép kiểu số sang chuỗi.
@@ -546,7 +502,6 @@ Tương tự ta cũng có các hàm [`int()`](https://docs.python.org/3/library/
 - Bạn nên sử dụng [`float()`](https://docs.python.org/3/library/functions.html#float) để ép kiểu cho  `pi_string` và lưu nó vào `pi_float`.
 
 `@sample_code`
-
 ```{python}
 # Cho trước các biến
 savings = 100
@@ -560,7 +515,6 @@ pi_string = "3.1415926"
 ```
 
 `@solution`
-
 ```{python}
 # Cho trước các biến
 savings = 100
@@ -575,7 +529,6 @@ pi_float = float(pi_string)
 ```
 
 `@sct`
-
 ```{python}
 # ensure predefined values are unmodified
 msg = "Không nên xóa các biến đã được tạo sẵn."
@@ -611,18 +564,16 @@ success_msg("Tuyệt")
 ## Tổng kết chương 1
 
 ```yaml
-type: MultipleChoiceExercise 
+type: MultipleChoiceExercise
+key: 3e5f0bdf3a
 lang: python
-xp: 50 
+xp: 50
 skills: 2
-key: 3e5f0bdf3a   
 ```
-
 
 Câu hỏi trắc nghiệm cuối chương. Đáp án nào là  không chính xác
 
 Bạn có thể copy các dòng lệnh và chạy nó trong khung _IPython Shell_ để kiểm tra kết quả
-
 
 `@instructions`
 - `"Có thể ép kiểu của số "  + str(5) + " sang string."`
@@ -634,14 +585,11 @@ Bạn có thể copy các dòng lệnh và chạy nó trong khung _IPython Shell
 Bạn có thể copy các dòng lệnh và chạy nó trong khung _IPython Shell_ để kiểm tra kết quả
 
 `@pre_exercise_code`
-
 ```{python}
 
 ```
 
-
 `@sct`
-
 ```{python}
 msg1 = "Chưa chính xác, Câu lệnh này hoàn toàn hợp lệ."
 msg2 = "Chưa chính xác, Câu lệnh này hoàn toàn hợp lệ."
